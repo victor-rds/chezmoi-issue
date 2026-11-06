@@ -1,7 +1,8 @@
 #:schema https://www.schemastore.org/chezmoi.json
+# {{- $ejsonDir := promptStringOnce . "custom" "eJSON Dir" ( joinPath .chezmoi.homeDir ".ejson" ) }}
 
 [ejson]
-	keyDir = {{ .custom | quote }}
+	keyDir = {{ $ejsonDir | quote }}
 
 [data]
-	custom = {{ joinPath .chezmoi.homeDir ".ejson" | quote }}
+	custom = {{ $ejsonDir | quote }}
