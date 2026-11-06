@@ -1,0 +1,5 @@
+#!/bin/sh
+
+printf '\n*** Run Before Script ***\n'
+printf '.chezmoi.config.ejson.keyDir: %s\n' "{{ .chezmoi.config.ejson.keyDir }}"
+printf '.data.custom: %s\n' "{{ .custom }}"

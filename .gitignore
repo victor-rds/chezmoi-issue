@@ -1,0 +1,24 @@
+# Linux/Unix temporary files
+*~
+*.swp
+*.log
+*.tmp
+*.bak
+*.nfs*
+.fuse_hidden*
+
+# VSCode #
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for VSCode
+.history/
+
+# VSCode Patch
+# Ignore all local history of files
+.history
+.ionide
